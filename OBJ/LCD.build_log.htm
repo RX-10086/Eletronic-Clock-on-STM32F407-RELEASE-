@@ -1,0 +1,105 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: μVision V5.23.0.0
+Copyright (C) 2017 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Weijia Yan, SSDUT, LIC=PE7GK-Z2XZS-QDDKD-8CZH1-FA8N8-D7DFU
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.23
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 4 (build 422)
+Assembler:       Armasm.exe V5.06 update 4 (build 422)
+Linker/Locator:  ArmLink.exe V5.06 update 4 (build 422)
+Library Manager: ArmAr.exe V5.06 update 4 (build 422)
+Hex Converter:   FromElf.exe V5.06 update 4 (build 422)
+CPU DLL:         SARMCM3.DLL V5.23
+Dialog DLL:      DCM.DLL V1.15.0.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V2.0.18.0
+Dialog DLL:      TCM.DLL V1.27.0.0
+ 
+<h2>Project:</h2>
+C:\Users\YWJ\Desktop\电子设计-题目三-闫巍嘉-20222241285-22年级\WORKS_v1.0\USER\WORKS_YWJ.uvprojx
+Project File Date:  04/14/2023
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 4 (build 422)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Rebuild target 'CLOCK'
+compiling sys.c...
+compiling main.c...
+..\HARDWARE\RTC\alarm.h(217): warning:  #1-D: last line of file ends without a newline
+  }
+main.c(30): warning:  #68-D: integer conversion resulted in a change of sign
+  u16 key = -1;            //记录按下哪个按键
+main.c: 2 warnings, 0 errors
+compiling delay.c...
+compiling system_stm32f4xx.c...
+assembling startup_stm32f40_41xxx.s...
+compiling led.c...
+compiling stm32f4xx_it.c...
+compiling usart.c...
+compiling timer_3_FUNC_02.c...
+..\HARDWARE\TIMER\FUNC_02.h(97): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "const u8 *"
+  	LCD_ShowString(18,30,str_output,
+HITE,
+RAYBLUE,16,0);
+..\HARDWARE\TIMER\FUNC_02.h(109): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "const u8 *"
+  	LCD_ShowString(18,50 + 12*flag_rec,*(rec + flag_rec),
+HITE,
+RAYBLUE,12,0);
+..\HARDWARE\TIMER\timer_3_FUNC_02.c: 2 warnings, 0 errors
+compiling key.c...
+compiling lcd_init.c...
+compiling timer_4_FUNC_03.c...
+..\HARDWARE\TIMER\FUNC_03.h(91): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "const u8 *"
+  	LCD_ShowString(18,30,str_output_0,
+HITE,
+RAYBLUE,16,0);
+..\HARDWARE\TIMER\timer_4_FUNC_03.c: 1 warning, 0 errors
+compiling lcd.c...
+compiling rtc.c...
+..\HARDWARE\RTC\FUNC_01.h(41): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "const u8 *"
+  	LCD_ShowString(80,21,WEEK[RTC_DateStruct.RTC_WeekDay - 1],
+ELLOW,
+RAYBLUE,12,0);
+..\HARDWARE\RTC\FUNC_01.h(46): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "const u8 *"
+  	LCD_ShowString(98,2,(RTC_TimeStruct.RTC_Hours <= 12)?"AM":"PM",
+ED,
+RAYBLUE,16,0);
+..\HARDWARE\RTC\FUNC_01.h(64): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "const u8 *"
+  	LCD_ShowString(80,20,WEEK[RTC_DateStruct.RTC_WeekDay - 1],
+ELLOW,
+RAYBLUE,12,0);
+..\HARDWARE\RTC\FUNC_01.h(277): warning:  #1-D: last line of file ends without a newline
+  }
+..\HARDWARE\RTC\FUNC_01.h(213): warning:  #550-D: variable "usart_len"  was set but never used
+  	  u16 usart_len;
+..\HARDWARE\RTC\FUNC_01.h(217): warning:  #177-D: variable "ch"  was declared but never referenced
+      u16 ch = 0;
+..\HARDWARE\RTC\rtc.c: 6 warnings, 0 errors
+compiling misc.c...
+compiling stm32f4xx_usart.c...
+compiling stm32f4xx_gpio.c...
+compiling stm32f4xx_rcc.c...
+compiling stm32f4xx_syscfg.c...
+compiling stm32f4xx_pwr.c...
+compiling stm32f4xx_exti.c...
+compiling stm32f4xx_tim.c...
+compiling stm32f4xx_fsmc.c...
+compiling stm32f4xx_rtc.c...
+linking...
+Program Size: Code=25340 RO-data=168496 RW-data=520 ZI-data=1968  
+FromELF: creating hex file...
+"..\OBJ\LCD.axf" - 0 Error(s), 11 Warning(s).
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_CLOCK
+  C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include
+
+<h2>Collection of Component Files used:</h2>
+Build Time Elapsed:  00:00:02
+</pre>
+</body>
+</html>
